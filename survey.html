@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="survey.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 id="title">Survey Form Title</h1>
+<div id="form-outer">
+  <p id="description">
+    Survey Form Sample description
+  </p>
+
+  <form id="survey-form" method="GET" action="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Select an Option:</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option disabled value>selec option </option>
+          <option  value="option1">option 1</option>
+          <option value="option2">option 2</option>
+          <option value="option3">option 3</option>
+          <option value="option4">option 4</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">check one choice</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>choice 1<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>choice 2<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>choice 3<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Check all that apply: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">choice 1</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">choice 2</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">choice 3</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">choice 4</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Write your sentences in box:</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+</div>
+</body>
+</html>
